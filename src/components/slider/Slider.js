@@ -15,7 +15,7 @@ function Slider({ percentage = 0, onChange }) {
     const thumbWidth = thumbRef.current.getBoundingClientRect().width
 
     const centerThumb = (thumbWidth / 100) * val * -1
-
+ 
     const centerProgressBar = thumbWidth - (thumbWidth / 100) * val
 
     setPosition(+val)
@@ -27,14 +27,28 @@ function Slider({ percentage = 0, onChange }) {
     <div className='slider-container'>
       <div
         className='progress-bar-cover'
-        style={{ width: `${position}%`, paddingRight: `${paddingRight}px` }}
-      ></div>
+        style={{ 
+          width: `${position}%`, 
+          paddingRight: `${paddingRight}px` 
+        }}
+      >
+      </div>
       <div
         ref={thumbRef}
         className='thumb'
-        style={{ left: `${position}%`, marginLeft: `${marginLeft}px` }}
-      ></div>
-      <input type='range' className='range' value={position} onChange={onChange} />
+        style={{ 
+          left: `${position}%`, 
+          marginLeft: `${marginLeft}px` 
+        }}
+      >
+      </div>
+      <input 
+        type='range' 
+        step='0.01' 
+        className='range' 
+        value={position} 
+        onChange={onChange} 
+      />
     </div>
   )
 }
