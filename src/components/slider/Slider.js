@@ -34,7 +34,6 @@ function Slider({ percentage = 0, onChange }) {
         className='thumb'
         style={{ left: `${position}%`, marginLeft: `${marginLeft}px` }}
       ></div>
-      {/* <input type='range'  value={percentage} /> */}
       <input type='range' className='range' value={position} onChange={onChange} />
     </div>
   )

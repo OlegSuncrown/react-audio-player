@@ -2,12 +2,14 @@ import React from 'react'
 import Button from './Button'
 import './control-panel.css'
 
-function ControlPanel({ play, isPlaying }) {
+function ControlPanel({ play, isPlaying, duration, currentTime }) {
+  //const audio = audioRef.current
+  //console.log(audioRef.current.currentTime)
   return (
     <div className='control-panel'>
-      <div className='timer'>00:00</div>
+      <div className='timer'>{currentTime}</div>
       <Button play={play} isPlaying={isPlaying} />
-      <div className='timer'>03:50</div>
+      <div className='timer'>{duration}</div>
     </div>
   )
 }
