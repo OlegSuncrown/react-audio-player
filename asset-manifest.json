@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-audio-player/static/css/main.666f2dea.chunk.css",
+    "main.js": "/react-audio-player/static/js/main.c8608bd9.chunk.js",
+    "main.js.map": "/react-audio-player/static/js/main.c8608bd9.chunk.js.map",
+    "runtime-main.js": "/react-audio-player/static/js/runtime-main.81d4f68f.js",
+    "runtime-main.js.map": "/react-audio-player/static/js/runtime-main.81d4f68f.js.map",
+    "static/js/2.1b77c855.chunk.js": "/react-audio-player/static/js/2.1b77c855.chunk.js",
+    "static/js/2.1b77c855.chunk.js.map": "/react-audio-player/static/js/2.1b77c855.chunk.js.map",
+    "static/js/3.936d8f83.chunk.js": "/react-audio-player/static/js/3.936d8f83.chunk.js",
+    "static/js/3.936d8f83.chunk.js.map": "/react-audio-player/static/js/3.936d8f83.chunk.js.map",
+    "index.html": "/react-audio-player/index.html",
+    "static/css/main.666f2dea.chunk.css.map": "/react-audio-player/static/css/main.666f2dea.chunk.css.map",
+    "static/js/2.1b77c855.chunk.js.LICENSE.txt": "/react-audio-player/static/js/2.1b77c855.chunk.js.LICENSE.txt",
+    "static/media/Suncrown - Legend of the Forgotten Centuries.7fc833c5.mp3": "/react-audio-player/static/media/Suncrown - Legend of the Forgotten Centuries.7fc833c5.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81d4f68f.js",
+    "static/js/2.1b77c855.chunk.js",
+    "static/css/main.666f2dea.chunk.css",
+    "static/js/main.c8608bd9.chunk.js"
+  ]
+}
