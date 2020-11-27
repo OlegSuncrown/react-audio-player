@@ -3,8 +3,6 @@ import Button from './Button'
 import './control-panel.css'
 
 function ControlPanel({ play, isPlaying, duration, currentTime }) {
-  //const audio = audioRef.current
-  //console.log(audioRef.current.currentTime)
   function secondsToHms(seconds) {
     if (!seconds) return '00m 00s'
 

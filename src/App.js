@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react'
 import song from './Suncrown - Legend of the Forgotten Centuries.mp3'
-
 import Slider from './components/slider/Slider'
 import ControlPanel from './components/controls/ControlPanel'
 
@@ -12,12 +11,10 @@ function App() {
 
   const audioRef = useRef()
 
-  const getCurrDuration = (e) => {
-    const percent = ((e.currentTarget.currentTime / e.currentTarget.duration) * 100).toFixed(2)
-    const time = e.currentTarget.currentTime /// 60
-
-    setPercentage(+percent)
-    setCurrentTime(time.toFixed(2))
+  const onChange = (e) => {
+    const audio = audioRef.current
+    audio.currentTime = (audio.duration / 100) * e.target.value
+    setPercentage(e.target.value)
   }
 
   const play = () => {
@@ -35,10 +32,12 @@ function App() {
     }
   }
 
-  const onChange = (e) => {
-    const audio = audioRef.current
-    setPercentage(e.target.value)
-    audio.currentTime = (audio.duration / 100) * e.target.value
+  const getCurrDuration = (e) => {
+    const percent = ((e.currentTarget.currentTime / e.currentTarget.duration) * 100).toFixed(2)
+    const time = e.currentTarget.currentTime
+
+    setPercentage(+percent)
+    setCurrentTime(time.toFixed(2))
   }
 
   return (
