@@ -50,31 +50,3 @@ function Slider({ percentage = 0, onChange }) {
 }
 
 export default Slider
-
-// const [progressBarWidth, setProgressBarWidth] = useState(0)
-
-//   const rangeRef = useRef()
-//   useEffect(() => {
-//     const rangeWidth = rangeRef.current.getBoundingClientRect().width
-//     const thumbWidth = 20
-//     const centerThumb = (thumbWidth / 100) * percentage * -1
-//     //const centerProgressBar = thumbWidth - (thumbWidth / 100) * percentage
-//     const centerProgressBar = 20 + rangeWidth/100 * percentage - (20/100 * percentage)
-//     console.log(20 + rangeWidth/100 * percentage - (20/100 * percentage))
-//     setPosition(percentage)
-//     setMarginLeft(centerThumb)
-//     setProgressBarWidth(centerProgressBar)
-//   }, [percentage])
-//   return (
-//     <div className='slider-container'>
-//       <div className='progress-bar-cover' style={{
-//           width: `${progressBarWidth}px`,
-//         }}></div>
-//       <div className='thumb' style={{
-//          left: `${position}%`,
-//          marginLeft: `${marginLeft}px`
-//       }}></div>
-//       <input ref={rangeRef} type='range' step='0.01' className='range' onChange={onChange}/>
-//     </div>
-//   )
-// }
